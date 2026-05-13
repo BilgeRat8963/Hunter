@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Environment variables (secrets!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Output CSVs (these are run-specific, don't need to commit)
+output/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
