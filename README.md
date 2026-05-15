@@ -1,10 +1,10 @@
 # Hunter
 
-A lightweight lead-generation tool that finds indie founders launching products right now — and surfaces their reachable contact info.
+A lightweight lead-generation tool that finds indie founders launching products right now - and surfaces their reachable contact info.
 
 ## Why
 
-Most outreach tools are built for sales teams targeting companies. Hunter is built for a different problem: you want to reach the *founders* — people shipping solo products on Indie Hackers, launching on ProductHunt, and posting Show HN threads. They're publicly building, publicly reachable, but scattered across sources with no unified way to find them with a handle and an email. Hunter scrapes those sources, normalises everything into a common lead schema, and runs a lightweight email-discovery pass against each founder's own website so you have something to work with.
+Most outreach tools are built for sales teams targeting companies. Hunter is built for a different problem: you want to reach the *founders* - people shipping solo products on Indie Hackers, launching on ProductHunt, and posting Show HN threads. They're publicly building, publicly reachable, but scattered across sources with no unified way to find them with a handle and an email. Hunter scrapes those sources, normalises everything into a common lead schema, and runs a lightweight email-discovery pass against each founder's own website so you have something to work with.
 
 ## How it works
 
