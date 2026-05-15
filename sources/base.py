@@ -17,9 +17,11 @@ class Lead:
     handle: str = ""             # X/Twitter or social handle, if available
     source: str = ""             # e.g. "producthunt", "indiehackers"
     source_url: str = ""         # Direct URL to the launch/post
+    website_url: str = ""        # Product's own website
     description: str = ""        # One-line description of the product
     score: int = 0               # Votes, upvotes, or relevance score
     category: str = ""           # Category/tag from the source
+    email: str = ""              # Best contact email found for this lead
     captured_at: datetime = field(default_factory=datetime.utcnow)
 
     def to_dict(self) -> dict:
@@ -29,9 +31,11 @@ class Lead:
             "handle": self.handle,
             "source": self.source,
             "source_url": self.source_url,
+            "website_url": self.website_url,
             "description": self.description,
             "score": self.score,
             "category": self.category,
+            "email": self.email,
             "captured_at": self.captured_at.isoformat(),
         }
 
