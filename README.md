@@ -8,10 +8,10 @@ Most outreach tools are built for sales teams targeting companies. Hunter is bui
 
 ## How it works
 
-- **Pluggable source modules** — each source in `sources/` inherits from `BaseSource` and implements `fetch()`. Adding a new source is one new file.
-- **Common Lead schema** — every source returns the same `Lead` dataclass: name, handle, description, MRR, source URL, website URL, email. Downstream code never needs to know which source a lead came from.
-- **Sources currently supported** — Indie Hackers (via public Algolia index embedded in their frontend), HackerNews Show HN (Firebase API), ProductHunt (GraphQL API, requires token).
-- **Email enrichment** — `sources/email_finder.py` fetches each lead's own website (homepage + `/contact`), extracts emails from `mailto:` links and plain-text regex, scores candidates by prefix quality and domain match, and writes the best one back onto the Lead object.
+- **Pluggable source modules** - each source in `sources/` inherits from `BaseSource` and implements `fetch()`. Adding a new source is one new file.
+- **Common Lead schema** - every source returns the same `Lead` dataclass: name, handle, description, MRR, source URL, website URL, email. Downstream code never needs to know which source a lead came from.
+- **Sources currently supported** - Indie Hackers (via public Algolia index embedded in their frontend), HackerNews Show HN (Firebase API), ProductHunt (GraphQL API, requires token).
+- **Email enrichment** - `sources/email_finder.py` fetches each lead's own website (homepage + `/contact`), extracts emails from `mailto:` links and plain-text regex, scores candidates by prefix quality and domain match, and writes the best one back onto the Lead object.
 
 ## Sample output
 
@@ -82,4 +82,4 @@ Target specific handles by editing `TARGET_HANDLES` at the top of `hunter.py`. T
 
 ## Built by
 
-[Ayden Cheer](https://aydencheersportfolio.vercel.app/)
+[Ayden Cheers](https://aydencheersportfolio.vercel.app/)
